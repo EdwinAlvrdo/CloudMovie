@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--SplashVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="SplashVC" customModule="CloudMovie" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="loading movies..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6m2-Ad-BGQ">
+                                <rect key="frame" x="128" y="637" width="119" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="Obq-G2-1lL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="main-image" translatesAutoresizingMaskIntoConstraints="NO" id="3sa-RZ-KOw">
+                                <rect key="frame" x="94" y="233.5" width="187.5" height="200"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cloud Moovie" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zad-jW-Yib">
+                                <rect key="frame" x="83" y="433.5" width="209.5" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="JG9-YU-NFY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.90135380993150682" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="3sa-RZ-KOw" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.5" id="43z-u6-pTh"/>
+                            <constraint firstItem="zad-jW-Yib" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5UK-qm-IHF"/>
+                            <constraint firstItem="zad-jW-Yib" firstAttribute="top" secondItem="3sa-RZ-KOw" secondAttribute="bottom" id="BnM-d6-wff"/>
+                            <constraint firstItem="6m2-Ad-BGQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GDn-Ze-mxa"/>
+                            <constraint firstItem="3sa-RZ-KOw" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.3" id="KH2-aa-aWO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="6m2-Ad-BGQ" secondAttribute="bottom" constant="5" id="ZAn-dY-Dsb"/>
+                            <constraint firstItem="3sa-RZ-KOw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uLI-rJ-yfv"/>
+                            <constraint firstItem="3sa-RZ-KOw" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="vbO-ux-hlt"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <segue destination="nal-aD-XlG" kind="show" identifier="showLogin" id="mSf-h0-H4i"/>
+                        <segue destination="GTe-2y-gX7" kind="show" identifier="showHome" id="cB8-sZ-waB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="40.799999999999997" y="26.53673163418291"/>
+        </scene>
+        <!--LoginVC-->
+        <scene sceneID="bze-Hv-Tsd">
+            <objects>
+                <viewController id="nal-aD-XlG" customClass="LoginVC" customModule="CloudMovie" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aVl-C1-pzZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="main-image" translatesAutoresizingMaskIntoConstraints="NO" id="O9e-j1-aB5">
+                                <rect key="frame" x="94" y="108.5" width="187.5" height="200"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pmX-OP-2NY">
+                                <rect key="frame" x="112.5" y="360" width="150" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="17"/>
+                                <color key="tintColor" red="0.88843911919999996" green="0.25657714860000003" blue="0.1882372917" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Login"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="goLogin:" destination="nal-aD-XlG" eventType="touchUpInside" id="MRp-SQ-JrF"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ingrese autorización" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9Ma-mf-nWP">
+                                <rect key="frame" x="94" y="306.5" width="187.5" height="40"/>
+                                <accessibility key="accessibilityConfiguration" hint="ToolboxMobileTest"/>
+                                <color key="textColor" red="0.88843911919999996" green="0.25657714860000003" blue="0.1882372917" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.89554794520547942" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="pmX-OP-2NY" firstAttribute="centerX" secondItem="aVl-C1-pzZ" secondAttribute="centerX" id="0ER-kp-CU6"/>
+                            <constraint firstItem="9Ma-mf-nWP" firstAttribute="top" secondItem="O9e-j1-aB5" secondAttribute="bottom" constant="-2" id="1kd-3D-ubE"/>
+                            <constraint firstItem="pmX-OP-2NY" firstAttribute="width" secondItem="aVl-C1-pzZ" secondAttribute="width" multiplier="0.4" id="4NQ-vR-dx1"/>
+                            <constraint firstItem="O9e-j1-aB5" firstAttribute="centerX" secondItem="aVl-C1-pzZ" secondAttribute="centerX" id="5ue-cA-gql"/>
+                            <constraint firstItem="9Ma-mf-nWP" firstAttribute="width" secondItem="aVl-C1-pzZ" secondAttribute="width" multiplier="0.5" id="9rd-Vr-0Tq"/>
+                            <constraint firstItem="O9e-j1-aB5" firstAttribute="width" secondItem="aVl-C1-pzZ" secondAttribute="width" multiplier="0.5" id="CKq-mb-aCt"/>
+                            <constraint firstItem="pmX-OP-2NY" firstAttribute="height" secondItem="aVl-C1-pzZ" secondAttribute="height" multiplier="0.06" id="Hap-Tu-Wmv"/>
+                            <constraint firstItem="9Ma-mf-nWP" firstAttribute="height" secondItem="pmX-OP-2NY" secondAttribute="height" id="WwW-LE-XqT"/>
+                            <constraint firstItem="9Ma-mf-nWP" firstAttribute="centerX" secondItem="aVl-C1-pzZ" secondAttribute="centerX" id="auQ-Yr-cqV"/>
+                            <constraint firstItem="O9e-j1-aB5" firstAttribute="height" secondItem="aVl-C1-pzZ" secondAttribute="height" multiplier="0.3" id="d09-wx-4ft"/>
+                            <constraint firstItem="9Ma-mf-nWP" firstAttribute="centerY" secondItem="aVl-C1-pzZ" secondAttribute="centerY" constant="-7" id="jT4-NB-z5M"/>
+                            <constraint firstItem="pmX-OP-2NY" firstAttribute="top" secondItem="9Ma-mf-nWP" secondAttribute="bottom" constant="13.5" id="qwe-Ga-Xu7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="VbF-s7-64M"/>
+                    </view>
+                    <connections>
+                        <outlet property="btnLogin" destination="pmX-OP-2NY" id="BPg-dh-xQZ"/>
+                        <outlet property="txtFieldAuthKey" destination="9Ma-mf-nWP" id="1WT-qv-IPS"/>
+                        <segue destination="GTe-2y-gX7" kind="show" identifier="showHome" id="o1c-W4-m4m"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gPD-T0-mDa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1197.5999999999999" y="-320.68965517241384"/>
+        </scene>
+        <!--Home TableVC-->
+        <scene sceneID="1mJ-XQ-GEx">
+            <objects>
+                <tableViewController id="GTe-2y-gX7" customClass="HomeTableVC" customModule="CloudMovie" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Hhu-ZG-i5J">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="105" id="teW-GG-2pO" customClass="HomeTableViewCell" customModule="CloudMovie" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="105"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="teW-GG-2pO" id="L3i-8x-rQw">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="104.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="GTe-2y-gX7" id="EZ0-6w-Q52"/>
+                            <outlet property="delegate" destination="GTe-2y-gX7" id="TNZ-i2-QR7"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="C9R-iv-ZJI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1197.5999999999999" y="472.71364317841085"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="main-image" width="209" height="208"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="o1c-W4-m4m"/>
+    </inferredMetricsTieBreakers>
+</document>

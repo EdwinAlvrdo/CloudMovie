@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="thumbCell" id="gTV-IL-0wX" customClass="ThumbCollectionViewCell" customModule="CloudMovie" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="268" height="198"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="268" height="198"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hbi-BY-skY">
+                        <rect key="frame" x="0.0" y="0.0" width="268" height="198"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="movie-placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="oPN-Xc-zwf">
+                                <rect key="frame" x="0.0" y="0.0" width="268" height="168.5"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KzT-5p-1Hq">
+                                <rect key="frame" x="0.0" y="168.5" width="268" height="29.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Img Title" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IBp-Oe-ctT">
+                                        <rect key="frame" x="8" y="3" width="252" height="23.5"/>
+                                        <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="15"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="IBp-Oe-ctT" firstAttribute="leading" secondItem="KzT-5p-1Hq" secondAttribute="leading" constant="8" id="6QM-vq-1r1"/>
+                                    <constraint firstAttribute="bottom" secondItem="IBp-Oe-ctT" secondAttribute="bottom" constant="3" id="Alj-oo-UCE"/>
+                                    <constraint firstAttribute="trailing" secondItem="IBp-Oe-ctT" secondAttribute="trailing" constant="8" id="SIc-1U-HnT"/>
+                                    <constraint firstItem="IBp-Oe-ctT" firstAttribute="top" secondItem="KzT-5p-1Hq" secondAttribute="top" constant="3" id="rOs-jp-xoH"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="oPN-Xc-zwf" firstAttribute="height" secondItem="hbi-BY-skY" secondAttribute="height" multiplier="0.85" id="NpT-Yg-Mw6"/>
+                            <constraint firstAttribute="bottom" secondItem="KzT-5p-1Hq" secondAttribute="bottom" id="QbN-RM-KEf"/>
+                            <constraint firstAttribute="trailing" secondItem="oPN-Xc-zwf" secondAttribute="trailing" id="R8H-UF-21R"/>
+                            <constraint firstItem="KzT-5p-1Hq" firstAttribute="height" secondItem="hbi-BY-skY" secondAttribute="height" multiplier="0.15" id="StJ-mG-v6B"/>
+                            <constraint firstAttribute="trailing" secondItem="KzT-5p-1Hq" secondAttribute="trailing" id="VyU-hS-9Tk"/>
+                            <constraint firstItem="KzT-5p-1Hq" firstAttribute="leading" secondItem="hbi-BY-skY" secondAttribute="leading" id="YnI-lV-WY3"/>
+                            <constraint firstItem="oPN-Xc-zwf" firstAttribute="top" secondItem="hbi-BY-skY" secondAttribute="top" id="c5p-je-SFk"/>
+                            <constraint firstItem="oPN-Xc-zwf" firstAttribute="leading" secondItem="hbi-BY-skY" secondAttribute="leading" id="wSZ-DB-Wmd"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="phD-1g-qhn"/>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="hbi-BY-skY" secondAttribute="trailing" id="Sxq-nI-FE1"/>
+                <constraint firstAttribute="bottom" secondItem="hbi-BY-skY" secondAttribute="bottom" id="YNH-Mp-lfF"/>
+                <constraint firstItem="hbi-BY-skY" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="k4h-dV-7Tv"/>
+                <constraint firstItem="hbi-BY-skY" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="wnE-mE-xBx"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="268" height="198"/>
+            <connections>
+                <outlet property="imgMovie" destination="oPN-Xc-zwf" id="eOS-yM-uRI"/>
+                <outlet property="lblTitle" destination="IBp-Oe-ctT" id="dbG-Hh-Wgu"/>
+            </connections>
+            <point key="canvasLocation" x="-88" y="88.15592203898052"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="movie-placeholder" width="490" height="368"/>
+    </resources>
+</document>
