@@ -75,9 +75,9 @@ class HomeTableVC: UITableViewController {
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if (self.data[indexPath.section].type?.elementsEqual("thumb"))!{
-            return self.screenHeight * 0.35
+            return self.screenHeight * 0.37
         }else{
-            return self.screenHeight * 0.46
+            return self.screenHeight * 0.50
         }
     }
 

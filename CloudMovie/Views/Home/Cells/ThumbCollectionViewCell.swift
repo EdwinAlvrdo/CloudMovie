@@ -31,7 +31,6 @@ class ThumbCollectionViewCell: UICollectionViewCell {
         let url = URL(string: urlString)
         
         self.imgMovie.loadFrom(url: url!)
-        self.imgMovie.contentMode = .scaleAspectFill
         self.lblTitle.text = data.title
     }
 

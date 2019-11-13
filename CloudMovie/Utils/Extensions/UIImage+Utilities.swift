@@ -17,7 +17,7 @@ extension UIImageView {
                 if let image = UIImage(data: imgData) {
                     DispatchQueue.main.async {
                         self?.image = image
-                        self?.contentMode = .scaleAspectFit
+                        self?.contentMode = .scaleAspectFill
                     }
                 }
             }

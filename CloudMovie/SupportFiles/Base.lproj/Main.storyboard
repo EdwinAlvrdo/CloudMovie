@@ -18,8 +18,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="loading movies..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6m2-Ad-BGQ">
-                                <rect key="frame" x="128" y="637" width="119" height="25"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="cargando peliculas..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6m2-Ad-BGQ">
+                                <rect key="frame" x="111.5" y="637" width="152.5" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="25" id="Obq-G2-1lL"/>
                                 </constraints>
@@ -30,8 +30,8 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="main-image" translatesAutoresizingMaskIntoConstraints="NO" id="3sa-RZ-KOw">
                                 <rect key="frame" x="94" y="233.5" width="187.5" height="200"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cloud Moovie" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zad-jW-Yib">
-                                <rect key="frame" x="83" y="433.5" width="209.5" height="35"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cloud Movie" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zad-jW-Yib">
+                                <rect key="frame" x="92" y="433.5" width="191" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="JG9-YU-NFY"/>
                                 </constraints>
@@ -78,7 +78,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="17"/>
                                 <color key="tintColor" red="0.88843911919999996" green="0.25657714860000003" blue="0.1882372917" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Login"/>
+                                <state key="normal" title="Iniciar sesión"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                         <integer key="value" value="10"/>
@@ -157,6 +157,6 @@
         <image name="main-image" width="209" height="208"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="o1c-W4-m4m"/>
+        <segue reference="cB8-sZ-waB"/>
     </inferredMetricsTieBreakers>
 </document>
